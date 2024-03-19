@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookies</title>
+    <style>
+        #a{grid-area: a1;}
+        #b{grid-area: b99;}
+        #c{grid-area: c1;}
+        #d{grid-area: d1;}
+        #e{grid-area: e1;}
+        #f{grid-area: f1;}
+        #g{grid-area: g1;}
+.maindiv {
+    display: grid;
+    grid-template-areas: " a1 a1 b99 b99 c1 c1 "
+    "d1 d1 e1 e1 f1 f1";
+    border: #423c3c;
+    text-decoration: none;
+    display: inline-grid;
+    grid-area: auto / auto / auto;
+    grid-area: span 3;
+}
+.maindiv a:hover img {
+    transform: scale(1.1); /* Example hover effect: scale the image by 10% */
+    opacity: 0.8; /*transparency*/
+}
+
+#a,#b,#c,#d,#e,#f{
+    background-color: #ADD8E6;
+  border: .8px solid #e0e5e5;
+  padding: 55px;
+  font-size: 30px;
+  text-align: center;
+}
+#all1Button :hover, #all1Button :focus{
+    background-color: #6c757d; /* Change background color on hover */
+    color:black /* Change text color on hover */
+}
+#all2Button:hover {
+    background-color: #6c757d; /* Change background color on hover */
+    color:black /* Change text color on hover */
+}
+#all3Button:hover {
+    background-color: #6c757d; /* Change background color on hover */
+    color:black /* Change text color on hover */
+}
+#all4Button:hover {
+    background-color: #6c757d; /* Change background color on hover */
+    color:black /* Change text color on hover */
+}
+#all5Button:hover {
+    background-color: #6c757d; /* Change background color on hover */
+    color:black /* Change text color on hover */
+}
+hr{
+    border-left: 2px solid rgb(255, 255, 255);
+}
+        ul{
+            background-color: #423c3c;
+            display: flex;
+            padding: 15px 15px;
+            border-radius: 15px;
+        }
+        li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        li a:hover,li a:active{
+            text-decoration: underline; 
+        }
+        .topic{
+            font-size: 30px;
+            margin-left: 30px;
+            padding-top: 10px;
+        }
+        .nav-button {
+    background-color: #ADD8E6; /* Default background color */
+    color: black; /* Default text color */
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+        #para {
+            font-weight: 10;
+            margin-top: 80px;
+            margin-left: 220px;
+            visibility: hidden;
+            color: #423c3c;
+        }
+        .container{
+            display: flex;
+        }
+        .grasp{
+            text-align: center; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: 1;
+             text-decoration: none;
+             text-decoration: dotted;
+             color: aliceblue;
+             -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: black;
+
+        }
+        .logo{
+            width: 70px;
+        }
+        pre{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        #all1Button,#all2Button,#all3Button,#all4Button,#all5Button{
+            text-decoration: none;
+            color: black;
+            padding: 4px;
+            display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+
+        } 
+        #all1Button{
+            background-color:aliceblue;
+        }
+        #all2Button{
+            background-color: aliceblue;
+        }
+        #all3Button{
+            background-color: aliceblue;
+        }
+        #all4Button{
+            background-color: aliceblue;
+        }
+        #all5Button{
+            background-color: aliceblue;
+        }
+        .grey-background {
+        background-color: grey !important; /* Permanently change background color to grey */
+    }
+    </style>
+    </head>
+<body style="background-color:#ADD8E6;">
+   <ul style="list-style-type:none;">
+    <li><img src="WhatsApp_Image_2024-03-17_at_5.28.56_PM-removebg-preview.png" class="logo"></li>
+    <li class="topic"><a href="book.html" style="padding-top: 7px;">Bookies</li>
+    
+        <li style=" padding-top: 7px; margin-left: 180px; " >
+            <form action="/search" method="get" style="margin-left: 10px;">
+            <input type="text" placeholder="Search..." name="search" style="font-size: 20px; border-radius: 8px;">
+                <button type="submit"style="margin-left: 20px; font-size: 20px;">Search</button>
+            </form>
+        </li>
+    <li style=" margin-left:250px; padding-top: 15px;font-size: 20px;border: white;"><a href="book.html"style="margin-left: 10px;">Home</li>
+    <li style="margin-left: 5px; padding-top: 15px;font-size: 20px;"><a href="#About">About</li></a>
+    <li style="margin-left: 15px; padding-top: 15px;font-size: 20px;"><a href="#Contact">Contact</li></a>
+   </ul>
+   <a href="all.html" class="nav-button" id="all1Button">All</a>
+   <a href="jess_walter.html" class="nav-button" id="all2Button">Jess Walter</a>
+   <a href="rachel_hawkins.html" class="nav-button" id="all3Button">Rachel Hawkins</a>
+   <a href="amanda_hampson.html" class="nav-button" id="all4Button">Amanda Hampson</a>
+   <a href="erica_james.html" class="nav-button" id="all5Button">Erica James</a>
+   <div class="container" >
+   <img src="book-removebg.png" alt="Girl in a jacket" width="400" height="400">
+   <br>
+   <pre id="para" >
+            Welcome to our book heaven! 
+
+      Pages alive, stories waiting to explore.
+
+                Start your journey today. 
+
+    Let the magic of reading take you places.</pre>
+    <br>
+   </div>
+   <h1 style="text-align: center; color: aliceblue;">.  .  .  .  .  .</h1>
+   <h1 class="grasp">Grasp Here!</h1>
+   <div align="center">
+    <div class="maindiv" >
+        <div id="a"><a  href="book1.html"><img src="book1.webp" alt="Hlink" style="width:250px;height:300px;"></a>
+        <pre>
+Beatiful Ruins a Novel
+  |  Jess Walter
+        </pre></div>
+        <div id="b"><a href="book2.html"><img src="book2.jfif" alt="Hlink" style="width:250px;height:300px;"></a>
+        <pre >
+The Villa  |  Rachel Hawkins
+        </pre>    
+        </div>
+        <div id="c">
+        <a href="book3.html"><img src="book3.jpg" alt="Hlink" style="width:250px;height:300px;"></a>
+        <pre >
+The yellow Villa  |  
+Amanda Hampson
+        </pre>  
+    </div>
+        <div id ="d"><a href="book4.html"><img src="book4.webp" alt="Hlink" style="width:250px;height:300px;"></a>
+            <pre >
+Coming home to Island House  
+|  Erica James
+            </pre> 
+        </div>
+        <div id="e"><a  href="book5.html"><img src="book5.jfif" alt="Hlink" style="width:250px;height:300px;"></a>
+            <pre >
+    A Breath of Fresh Air  |  Erica 
+    James
+            </pre> 
+        </div>
+        <div id="f"><a  href="book6.html"><img src="book6.jfif" alt="Hlink" style="width:250px;height:300px;"></a>
+            <pre >
+A Breath of Fresh Air
+  |  Erica James
+            </pre> 
+        </div>
+    </div>
+</div>
+   <script>
+
+    // Add event listeners to each button
+    document.getElementById("all1Button").addEventListener("click", function(event) {
+        
+        handleClick('all1Button');
+    });
+
+    document.getElementById("all2Button").addEventListener("click", function(event) {
+        handleClick('all2Button');
+    });
+
+    document.getElementById("all3Button").addEventListener("click", function(event) {
+        handleClick('all3Button');
+    });
+
+    document.getElementById("all4Button").addEventListener("click", function(event) {
+        handleClick('all4Button');
+    });
+
+    document.getElementById("all5Button").addEventListener("click", function(event) {
+        handleClick('all5Button');
+    });
+
+    var paragraph = document.getElementById("para");
+var text = paragraph.textContent;
+paragraph.textContent = ""; // Clear the original text content
+for (var i = 0; i < text.length; i++) {
+    // Create a span element for each character
+    var span = document.createElement("span");
+    span.textContent = text[i];
+    span.style.fontFamily = "Arial";
+    span.style.fontSize = "30px";
+    // Append the span to the paragraph
+    paragraph.appendChild(span);
+    
+    // Delay the display of each character by 40 milliseconds
+    setTimeout((function(spanCopy) {
+        return function() {
+            spanCopy.style.visibility = "visible";
+        };
+    })(span), i * 20); // Adjust the delay time as needed
+}
+</script>
+</body>
+</html>
